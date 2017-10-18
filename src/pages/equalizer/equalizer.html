@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+      <ion-title>Equalizer</ion-title>
+      
+      <ion-buttons end>
+        <ion-toggle></ion-toggle>
+      </ion-buttons>
+
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <p>Bass Boost</p>
+    <ion-range></ion-range>
+
+    <p>Virtializer</p>
+    <ion-range></ion-range>
+   
+    <p>3D Reverb Effects</p>
+    <s>(Recommended with Headset)</s>
+    
+    <p>None<ion-icon name="arrow-down"></ion-icon></p>
+    <p>Present</p>
+    <p>Normal<ion-icon name="arrow-down"></ion-icon></p>
+
+    <div class="rangeVer">
+        <i class="icon ion-volume-low"></i>
+        <input type="range" name="volume">
+        <i class="icon ion-volume-high"></i>
+        <p>75Hz-225Hz</p>
+      </div>
+     
+  </ion-content>
+  
