@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, PopoverController } from 'ionic-angular';
+import { SortPopoverPage } from '../sort-popover/sort-popover';
+import { TrackMorePopoverPage } from '../track-more-popover/track-more-popover';
 
 @Component({
   selector: 'page-home',
@@ -18,7 +20,13 @@ export class HomePage {
                 ];
   }
   presentSort(myEvent) {
-    let popover = this.popoverCtrl.create(PopoverPage);
+    let popover = this.popoverCtrl.create(SortPopoverPage);
+    popover.present({
+      ev: myEvent
+    });
+  }
+  presentTrackMore(myEvent) {
+    let popover = this.popoverCtrl.create(TrackMorePopoverPage);
     popover.present({
       ev: myEvent
     });
