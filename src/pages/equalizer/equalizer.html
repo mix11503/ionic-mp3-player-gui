@@ -1,37 +1,61 @@
 <ion-header>
     <ion-navbar>
-      <button ion-button menuToggle>
+        <button ion-button menuToggle>
         <ion-icon name="arrow-back"></ion-icon>
       </button>
-      <ion-title>Equalizer</ion-title>
-      
-      <ion-buttons end>
-        <ion-toggle></ion-toggle>
-      </ion-buttons>
+        <ion-title>Equalizer</ion-title>
+
+        <ion-buttons end>
+            <ion-toggle></ion-toggle>
+        </ion-buttons>
 
     </ion-navbar>
-  </ion-header>
-  
-  <ion-content padding>
-    <p>Bass Boost</p>
+</ion-header>
+
+<ion-content padding>
+    <h6>Bass Boost</h6>
     <ion-range></ion-range>
 
-    <p>Virtializer</p>
+    <h6>Virtializer</h6>
     <ion-range></ion-range>
-   
-    <p>3D Reverb Effects</p>
-    <s>(Recommended with Headset)</s>
-    
-    <p>None<ion-icon name="arrow-down"></ion-icon></p>
+
+    <h6>3D Reverb Effects</h6>
+    <p>(Recommended with Headset)</p>
+
+    <ion-item no-lines>
+        <h6>None</h6>
+        <ion-buttons item-end>
+            <ion-icon name="arrow-down"></ion-icon>
+        </ion-buttons>
+
+    </ion-item>
     <p>Present</p>
-    <p>Normal<ion-icon name="arrow-down"></ion-icon></p>
+    <ion-item no-lines>
+        <h6>Normal</h6>
+        <ion-buttons item-end>
+            <ion-icon name="arrow-down"></ion-icon>
+        </ion-buttons>
 
-    <div class="rangeVer">
-        <i class="icon ion-volume-low"></i>
-        <input type="range" name="volume">
-        <i class="icon ion-volume-high"></i>
-        <p>75Hz-225Hz</p>
-      </div>
-     
-  </ion-content>
-  
+    </ion-item>
+
+    <div>
+        <ion-row>
+            <div class="rangeVer">
+                <input type="range" name="volume">
+            </div>
+            <div class="rangeVer">
+                <input type="range" name="volume">
+            </div>
+            <div class="rangeVer">
+                <input type="range" name="volume">
+            </div>
+            <div class="rangeVer">
+                <input type="range" name="volume">
+            </div>
+            <div class="rangeVer">
+                <input type="range" name="volume">
+            </div>
+        </ion-row>
+
+    </div>
+</ion-content>
