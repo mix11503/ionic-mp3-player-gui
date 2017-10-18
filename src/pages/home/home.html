@@ -4,15 +4,38 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Home</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only>
+          <ion-icon name="funnel"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="cloud-download"></ion-icon>
+        </button>
+        <button ion-button icon-only>
+          <ion-icon name="search"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+  <ion-navbar>
+    <ion-buttons>
+      <ion-slides>
+        <button ion-button>TRACKS</button>
+        <button ion-button>ALBUMS</button>
+        <button ion-button>ARTISTS</button>
+        <button ion-button>GENRES</button>
+        <button ion-button>PLAYLISTS</button>
+      </ion-slides>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-list>
+    <ion-item *ngFor="let track of tracks">
+      <h2>{{track.name}}</h2>
+      <p>{{track.artis}}</p>
+      <p item-end style="padding-right: 15px">{{track.time}}</p>
+      <ion-icon name="more" item-end></ion-icon> 
+    </ion-item>
+  </ion-list>
 </ion-content>
