@@ -10,6 +10,7 @@ import { storePage } from '../pages/store/store';
 import { SortPopoverPage } from '../pages/sort-popover/sort-popover';
 import { TrackMorePopoverPage } from '../pages/track-more-popover/track-more-popover';
 import { PlayTrackPage } from '../pages/play-track/play-track';
+import { themePage } from '../pages/theme/theme';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,7 +24,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     storePage,
     SortPopoverPage,
     TrackMorePopoverPage,
-    PlayTrackPage
+    PlayTrackPage,
+    themePage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     storePage,
     SortPopoverPage,
     TrackMorePopoverPage,
-    PlayTrackPage
+    PlayTrackPage,
+    themePage
   ],
   providers: [
     StatusBar,
