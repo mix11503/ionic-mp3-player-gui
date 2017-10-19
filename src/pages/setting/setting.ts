@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController ,PopoverController} from 'ionic-angular';
+
+import { themePage } from '../theme/theme';
 
 @Component({
   selector: 'page-setting',
@@ -7,8 +9,15 @@ import { NavController } from 'ionic-angular';
 })
 export class settingPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController ,private popoverCtrl: PopoverController) {
 
+  }
+
+  presentSort(myEvent) {
+    let popover = this.popoverCtrl.create(themePage);
+    popover.present({
+      ev: myEvent
+    });
   }
 
 }
