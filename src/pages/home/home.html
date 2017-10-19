@@ -46,7 +46,7 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item *ngFor="let track of tracks">
+    <ion-item *ngFor="let track of tracks" (click)="playTrack()">
       <h2>{{track.name}}</h2>
       <p>{{track.artis}}</p>
       <p item-end style="padding-right: 15px">{{track.time}}</p>

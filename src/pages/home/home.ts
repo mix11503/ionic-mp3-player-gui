@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, PopoverController } from 'ionic-angular';
 import { SortPopoverPage } from '../sort-popover/sort-popover';
 import { TrackMorePopoverPage } from '../track-more-popover/track-more-popover';
+import { PlayTrackPage } from '../play-track/play-track';
 
 @Component({
   selector: 'page-home',
@@ -30,6 +31,9 @@ export class HomePage {
     popover.present({
       ev: myEvent
     });
+  }
+  playTrack(){
+    this.navCtrl.push(PlayTrackPage);
   }
 }
 
